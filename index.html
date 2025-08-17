@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Kleinert - Product & Discovery Person</title>
+    <meta name="description" content="Product enthusiast eager to learn and create impactful digital products. Explore Michael's journey from fundraising to energy cooperatives to insurance applications.">
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="photos/Slide_1.jpg" as="image">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Persistent Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="header-brand">
+                <span class="brand-text">Michael Kleinert</span>
+            </div>
+            <div class="header-nav">
+                <a href="https://www.linkedin.com/in/kleinertmich" target="_blank" rel="noopener noreferrer" class="nav-link linkedin-link" aria-label="View Michael's LinkedIn profile">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                <a href="Resume/Michal_Kleinert_CV_english_2024.jpg" class="nav-link resume-link" download="Michal_Kleinert_CV_english_2024.jpg" aria-label="Download Michael's CV">
+                    Download CV
+                </a>
+                <a href="mailto:mich.kleinert@gmail.com" class="contact-button primary" aria-label="Contact Michael via email">
+                    Get in touch
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content" role="main">
+        <!-- Slide Container -->
+        <div class="slide-container" id="slide-container">
+            <!-- Slide 1: Introduction -->
+            <section class="slide slide-1 active" id="slide-1" role="region" aria-label="Introduction">
+                <div class="slide-content">
+                    <div class="slide-grid">
+                        <!-- Left Column: Text Content -->
+                        <div class="slide-text">
+                            <h1 class="slide-headline">Get ahead. Get Michael</h1>
+                            <h2 class="slide-subheadline">PRODUCT & DISCOVERY PERSON</h2>
+                            <p class="slide-description">
+                                Product enthusiast eager to learn and create impactful digital products. 
+                                I am looking for a new challenge and a new opportunity to grow.
+                            </p>
+                            <div class="slide-question">
+                                <p>What have I achieved so far?</p>
+                            </div>
+                            <button class="cta-button" id="explore-journey">
+                                Explore my journey
+                            </button>
+                        </div>
+                        
+                        <!-- Right Column: Photo -->
+                        <div class="slide-photo">
+                            <img src="photos/Slide_1.jpg" 
+                                 alt="Michael Kleinert" 
+                                 class="michael-photo"
+                                 loading="eager">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+
+    <!-- Navigation Controls -->
+    <div class="navigation-controls" role="navigation" aria-label="Slide navigation">
+        <button class="nav-button nav-prev" id="nav-prev" aria-label="Previous slide">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+            </svg>
+        </button>
+        <button class="nav-button nav-next" id="nav-next" aria-label="Next slide">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline-container" role="navigation" aria-label="Timeline navigation">
+        <div class="timeline" id="timeline">
+            <button class="timeline-item active" data-slide="1" aria-label="Go to slide 1: Introduction">
+                <span class="timeline-year">2018</span>
+                <span class="timeline-label">Start</span>
+            </button>
+            <!-- Additional timeline items will be added dynamically -->
+        </div>
+    </div>
+
+    <!-- Keyboard Navigation Hint -->
+    <div class="keyboard-hint" id="keyboard-hint">
+        <span>Use ← → arrows to move through the journey</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/timeline.js"></script>
+    <script src="js/analytics.js"></script>
+</body>
+</html>
